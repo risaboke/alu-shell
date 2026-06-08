@@ -6,5 +6,4 @@ A collection of shell scripts practicing I/O redirections, filters, and special 
 
 ### io_redirections_and_filters/
 
-- 0-hello_world: "Prints "Hello, World" followed by a new line to standard output'
-
+- 0-hello_world: "Prints "Hello, World" followed by a new line to standard output' > README.md
