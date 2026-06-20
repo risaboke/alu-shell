@@ -5,7 +5,6 @@ PIDFILE=/var/run/my_process.pid
 start() {
     ./manage_my_process &
     echo $! > "$PIDFILE"
-    echo "manage_my_process started"
 }
 
 stop() {
@@ -13,15 +12,16 @@ stop() {
         kill "$(cat "$PIDFILE")" 2>/dev/null
         rm -f "$PIDFILE"
     fi
-    echo "manage_my_process stopped"
 }
 
 case "$1" in
     start)
         start
+        echo "manage_my_process started"
         ;;
     stop)
         stop
+        echo "manage_my_process stopped"
         ;;
     restart)
         stop
