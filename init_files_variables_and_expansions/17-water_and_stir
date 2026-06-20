@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%o\n' $((5#$(tr 'water' '01234' <<<"$WATER") + 4#$(tr 'stir' '0123' <<<"$STIR"))) | tr '01234567' 'bestchol'
+printf '%o\n' $((5#$(tr 'waterWATER' '0123401234' <<<"$WATER") + 4#$(tr 'stirSTIR' '01230123' <<<"$STIR"))) | tr '01234567' 'bestchol'
